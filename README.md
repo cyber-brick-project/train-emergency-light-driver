@@ -8,6 +8,7 @@ Lights driver for "Service, Test and Developing Train". Depending on train type,
  - Top emergency lights – disable / enable
 
 ## Branches
- - `master` - Code
+ - `master` - Description
+ - `code` - Code
  - `doc` - Documentation in LaTeX
  - `hardware` - Arduino configuration for Atmega328 8MHz
