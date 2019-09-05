@@ -12,3 +12,12 @@ Lights driver for "Service, Test and Developing Train". Depending on train type,
  - `code` - Code
  - `doc` - Documentation in LaTeX
  - `hardware` - Arduino configuration for Atmega328 8MHz
+
+## doc - how to run
+
+Requirements:
+ - https://www.tug.org/mactex/
+ - http://www.tug.org/fonts/getnonfreefonts/
+
+Command:
+`pdflatex -synctex=1 -interaction=nonstopmode Documentation.tex`
