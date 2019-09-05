@@ -1,20 +1,21 @@
+% Document variables for framework
 \newcommand{\cbpDocumentClass}{mwart}
+\newcommand{\cbpDocumentFont}{fontenc}
 
+% Include framework
 \input{latex-template/settings.tex}
 
-\cbpSetMainFont{fontenc}
-
+% Document
 \begin{document}
 
-\cbpTitlePage{Service, Test and Developing Train}{Emergency light driver}
+\cbpTitlePage{Service, Test and Developing Train}{Emergency Light Driver}
 
 \tableofcontents
 % \listoffigures
 % \listoftables
 
-\clearpage
-
-\section{Introduction}
+% Content
+\include{content/section-001/section-001}
 
 
 \end{document}
