@@ -1,4 +1,43 @@
 \section{Introduction to ``Emergency Light Driver''}
-
 ``Emergency Light Driver'' is~a device for controlling lights used for emergency vehicles like
-ambulance, fire truck, road assistance, etc. 
+ambulance, fire truck, road assistance, etc. Also, supports front and rear lights.
+
+Driver should allow running subsets of lights in few different modes.
+
+\subsection{Lights sets and modes}
+Short summary of sets with available modes.
+
+\begin{enumerate}
+	\item Front and rear lights -- Normal white and red lights, present in every vehicle
+	\begin{itemize}
+		\item Off -- No lights.
+		\item Vehicle goes forward -- front white light, rear red light.
+		\item Vehicle goes backward -- front red light, rear withe light.
+		\item All on -- all white and red are on.
+	\end{itemize}
+	
+	\item Top set
+	\begin{itemize}
+		\item Off -- No lights.
+		\item Flashing alternately -- Few short signals on left side, then the same on right side.
+		\item Light alternately -- Constant signal on left side, then the same on right side. Working a bit slower than ``Flashing alternately'' mode.
+		\item All on -- all lights are on, no blinking.
+	\end{itemize}
+		
+	\item Contour
+	\begin{itemize}
+		\item Off - No Lights.
+		\item Light alternately - Constant signal on even light then on odd light.
+		\item Fase - All lights fades in and out simultaneously.
+		\item All on -- all lights are on, no blinking.
+	\end{itemize}
+\end{enumerate}
+
+\subsection{Communication}
+Driver supports two ways of communication. Communication mode can be selected by setting logic 0 or 1 to dedicated pin.
+\newline
+Modes:
+\begin{itemize}
+	\item dedicated input pins for setting wanted light states,
+	\item I\textsuperscript{2}C
+\end{itemize}

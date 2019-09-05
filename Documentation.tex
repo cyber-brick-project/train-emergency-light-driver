@@ -1,6 +1,7 @@
 % Document variables for framework
 \newcommand{\cbpDocumentClass}{mwart}
 \newcommand{\cbpDocumentFont}{fontenc}
+\newcommand{\cbpDocumentSides}{oneside}
 
 % Include framework
 \input{latex-template/latex-template.tex}
@@ -9,7 +10,9 @@
 \begin{document}
 
 \cbpTitlePage{Service, Test and Developing Train}{Emergency Light Driver}
+\cbpEmptyPageIfTwoside
 
+\setcounter{page}{1}
 \tableofcontents
 % \listoffigures
 % \listoftables
