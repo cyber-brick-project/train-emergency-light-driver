@@ -20,4 +20,6 @@ Requirements:
  - http://www.tug.org/fonts/getnonfreefonts/
 
 Command:
-`pdflatex -synctex=1 -interaction=nonstopmode Documentation.tex`
+```
+pdflatex -synctex=1 -interaction=nonstopmode Documentation.tex
+```
