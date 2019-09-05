@@ -19,7 +19,7 @@ Requirements:
  - https://www.tug.org/mactex/
  - http://www.tug.org/fonts/getnonfreefonts/
 
-Command:
+Command to build documentation:
 ```
 pdflatex -synctex=1 -interaction=nonstopmode Documentation.tex
 ```

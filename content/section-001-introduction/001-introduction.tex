@@ -7,6 +7,8 @@ different for ambulance).
 
 Driver should allow running subsets of lights in few different modes.
 
+%% ------------------------------------------------------------------------------------------ %%
+
 \subsection{Lights sets and modes}
 Short summary of sets with available modes.
 
@@ -36,11 +38,22 @@ Short summary of sets with available modes.
 	\end{itemize}
 \end{enumerate}
 
+%% ------------------------------------------------------------------------------------------ %%
+
 \subsection{Communication}
-Driver supports two ways of communication. Communication mode can be selected by setting logic 0 or 1 to dedicated pin.
+Driver supports two ways of communication. Communication mode can be selected by setting logic 0~or~1 to dedicated pin.
 \newline
 Modes:
 \begin{itemize}
 	\item dedicated input pins for setting wanted light states,
 	\item I\textsuperscript{2}C
 \end{itemize}
+
+%% ------------------------------------------------------------------------------------------ %%
+
+\subsection{Hardware}
+Main chip is \textbftt{atmega328}, or compatible. Without quartz oscillator.
+
+Removed oscillator allows building simpler and gives 2 more I/O pins. Without external quartz, chip works with frequency of 8MHz, which is more than enough
+even for smooth fading. Connection via I\textsuperscript{2}C with chips with 16MHz oscillator will not be any problem, because I\textsuperscript{2}C works
+with a~speed of slowest device.
