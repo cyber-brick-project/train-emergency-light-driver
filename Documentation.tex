@@ -3,6 +3,12 @@
 \newcommand{\cbpDocumentFont}{fontenc}
 \newcommand{\cbpDocumentSides}{oneside}
 
+% Variables for automatic comiplation
+% https://github.com/cyber-brick-project/documentation-compiler
+\IfFileExists{./automatic_compilation_variables.tex}{
+	\input{automatic_compilation_variables.tex}
+}{}
+
 % Include framework
 \input{latex-template/latex-template.tex}
 

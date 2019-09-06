@@ -263,3 +263,7 @@ TSWLatexianTemp*
 # standalone packages
 *.sta
 
+# Variables set by automated compilator
+# https://github.com/cyber-brick-project/documentation-compiler
+automatic_compilation_variables.tex
+
