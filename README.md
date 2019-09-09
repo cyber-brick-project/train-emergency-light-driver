@@ -12,3 +12,6 @@ Lights driver for "Service, Test and Developing Train". Depending on train type,
  - `code` - Code
  - `doc` - Documentation in LaTeX
  - `hardware` - Arduino configuration for Atmega328 8MHz
+
+## Check submodule's READMEs
+Some submodules may contain requirements for successful running.
